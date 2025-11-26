@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABOUT THE DEVELOPER</title>
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+color: white;
+text-align: center;
+background-image: url('https://img.freepik.com/premium-photo/anime-programmer-working-code_1282444-263455.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+h1 {
+margin-top: 40px;
+font-size: 3rem;
+text-shadow: 2px 2px 10px black;
+}
+.container {
+margin-top: 50px;
+}
+button {
+padding: 15px 25px;
+margin: 10px;
+font-size: 1.2rem;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+background-color: white;
+color: black;
+transition: 0.3s;
+font-weight: bold;
+}
+button:hover {
+background-color: #e0e0e0;
+}
+#infoBox {
+display: none;
+margin: 30px auto;
+width: 60%;
+padding: 20px;
+background: rgba(0,0,0,0.7);
+border-radius: 15px;
+font-size: 1.3rem;
+box-shadow: 0 0 15px black;
+}
+</style>
+</head>
+<body>
+
+
+<h1>ABOUT THE DEVELOPER</h1>
+
+
+<div class="container">
+<button onclick="showInfo(' Mohammed Farhan')"> Name</button>
+<button onclick="showInfo(' mohammedfarhan@gmail.com')"> Gmail</button>
+<button onclick="showInfo(' SBOA SCHOOL (CBSE)')"> School</button>
+<button onclick="showInfo(' farhan.is.dev')"> GitHub</button>
+<button onclick="showInfo(' https://github.com/farhanisdev/project.farhan')"> GitHub Server</button>
+<button onclick="showInfo(' 2nd March 2011')"> Date of Birth</button>
+<button onclick="showInfo(' After facing challenges and stepping back for a while, Farhan made a powerful comeback. He spent time learning, improving, and transforming himself into a better developer. Every setback became a lesson, and every lesson built the foundation for his new beginning — a comeback powered by dedication and unstoppable spirit.')"> Inspiring Story</button>
+</div>
+
+
+<div id="infoBox"></div>
+
+
+<script>
+function showInfo(text) {
+const box = document.getElementById('infoBox');
+box.style.display = 'block';
+box.innerText = text;
+}
+</script>
+
+
+</body>
+</html>
